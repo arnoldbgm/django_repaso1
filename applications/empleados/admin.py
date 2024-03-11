@@ -16,7 +16,7 @@ class EmpleadoAdmin(admin.ModelAdmin):
     )
 
     def full_name(self, obj):
-        return 'Nombre' + ' '+ obj.first_name + ' ' + obj.last_name
+        return 'Nombre' + ' '+ obj.first_name + ' ' + obj.last_name 
 
     list_filter = ('job',)
 
