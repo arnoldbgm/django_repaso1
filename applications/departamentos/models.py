@@ -10,3 +10,7 @@ class DepartamentosModel(models.Model):
     def __str__(self) -> str:
         return self.name + '-' + self.short_name
     
+    class Meta:
+        verbose_name= 'Mi departamento'  #Nombre dentro del admin
+        verbose_name_plural = 'Areas de la empresa'
+        ordering = ['name']
