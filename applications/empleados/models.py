@@ -34,6 +34,8 @@ class EmpleadosModel(models.Model):
     content_cv = RichTextField()
     # image = models.ImageField('Imagenes', upload_to=None, height_field=None, width_field=None, max_length=None)
 
+    def __str__(self) -> str:
+        return self.first_name + " " + self.last_name
 
     class Meta:
         verbose_name = 'Empleado'

@@ -1,0 +1,8 @@
+<h2>Empleados que pertenencen a la empresa</h2>
+
+{{ object_list}}
+<ul>
+  {%for e in object_list%}
+  <li>{{e}}</li>
+  {% endfor%}
+</ul>
